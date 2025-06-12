@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 10vh;
+  background-color: rgb(6, 6, 6);
+  position: relative;
+  color: whitesmoke;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(249, 245, 245);
+}
+
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #855b32;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+.box2 > * {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+#nav-menu.show {
+  display: flex;
+}
+#nav-menu li {
+  margin: 40px auto;
+  color: white;
+  cursor: pointer;
+}
+
+#nav-menu li a:hover {
+  color: rgb(0, 149, 255);
+  transform: scale(1.1);
+}
+
+/* Hamburger Button */
+#hamburger {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+}
+/* Home Swction */
+.box1 img {
+  width: 100%;
+  margin: 10px auto;
+}
+.btn1 button {
+  background-color: orange;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+.btn {
+  background-color: orange;
+  color: white;
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* Product Section */
+.products {
+  display: grid;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(214, 209, 209);
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+.products h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
+.card img {
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+}
+.content {
+  width: 100%;
+  background-color: rgb(219, 219, 221);
+  border-radius: 5px;
+}
+.content > * {
+  text-align: center;
+  margin: 5px;
+}
+/* contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e0e0;
+  opacity: 80%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form > * {
+  margin: 15px;
+}
+.input,
+form button {
+  width: 70%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0;
+}
+form button {
+  background-color: #924141;
+  color: whitesmoke;
+}
+.contact h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 20px 0px;
+}
+#cpyrt {
+  color: whitesmoke;
+  text-align: center;
+  font-size: small;
+  margin: 5px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.social > * {
+  margin: 15px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 700px) {
+  #hamburger {
+    display: block;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  #nav-menu {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  #hamburger {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  #nav-menu li {
+    margin: 0 30px;
+  }
+  .home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+  .box1 {
+    order: 2;
+  }
+  .box2 p,
+  .btn1 {
+    text-align: left;
+  }
+  .box2 h2 {
+    font-size: 8vmin;
+    text-align: left;
+  }
+  .box2 {
+    width: 50vw;
+  }
+  .box1 img {
+    width: 85%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 300px;
+  }
+  .card img {
+    height: 200px;
+    width: 250px;
+  }
+  .box1 img:hover {
+    transition: all 2s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .input,
+  form button {
+    width: 400px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 0;
+  }
+  .footer-sec {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .links > * {
+    margin: 5px 10px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+}
