@@ -179,7 +179,7 @@ p {
 .card p {
   padding: 5px 2px;
 }
-.btn {
+.btn ,.btn button{
   padding: 10px;
   background-color: rgb(4, 4, 80);
   color: white;
