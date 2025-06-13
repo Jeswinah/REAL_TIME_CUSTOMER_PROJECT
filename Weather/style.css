@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(224, 245, 245);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: #c8c8ce;
+  width: 90%;
+  height: 70vh;
+  border-radius: 15px;
+  box-shadow: 1px 2px 10px 2px;
+  padding: 10px 0;
+}
+.input-field {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+input {
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 0px 10px;
+  outline: none;
+}
+.input-field button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: red;
+  color: whitesmoke;
+  border: 0;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+}
+.box2 img {
+  margin: 10px 0px;
+}
+.spec {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 30px;
+  margin: 20px 0 0;
+}
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+#temp {
+  text-align: center;
+  font-size: 4rem;
+}
+@media only screen and (min-width: 500px) {
+  .box {
+    width: 400px;
+  }
+}
