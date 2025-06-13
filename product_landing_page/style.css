@@ -88,6 +88,27 @@ nav a {
   padding: 5px;
   border-radius: 5px;
 }
+/* Services section */
+.services {
+  height: 100vh;
+}
+.service-box1 img {
+  width: 100%;
+  height: auto;
+}
+.service-box2 h2 {
+  text-align: center;
+  margin: 15px auto;
+}
+.service-box2 {
+  text-align: justify;
+  padding: 10px;
+}
+
+h2 {
+  color: rgb(214, 150, 66);
+}
+
 /* Product Section */
 .products {
   display: grid;
@@ -177,6 +198,14 @@ form button {
   #nav-menu {
     flex-direction: column;
   }
+  .img-box {
+    display: none;
+  }
+  .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 701px) {
@@ -253,6 +282,43 @@ form button {
   }
   .links > * {
     margin: 5px 10px;
+  }
+  /* Services */
+  .services {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  h2 {
+    font-size: 5vmin;
+  }
+  .service-box1 {
+    width: 40vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .service-box1 img {
+    width: 100%;
+  }
+  .service-box2 {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .service-box2 > * {
+    margin: 40px 2px;
+  }
+  .service-box2 img {
+    margin: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+  }
+  .img-box img:hover {
+    transform: rotate(2deg);
+    cursor: pointer;
+    transition: all 3s ease;
   }
 }
 @media only screen and (min-width: 1020px) {
