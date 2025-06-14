@@ -42,7 +42,7 @@ const apihandler = async (val) => {
     }
   } else {
     alert("Enter a Correct city");
-    console.log("Error occured");
+    console.error("Error occured");
   }
 };
 
