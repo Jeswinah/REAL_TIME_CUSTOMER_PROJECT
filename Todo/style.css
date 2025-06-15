@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  background-color: rgb(83, 94, 123);
+  font-family: "Times New Roman", Times, serif;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  color: rgb(213, 140, 5);
+  margin: 10px 0;
+}
+.box {
+  width: 90%;
+  min-height: 80%;
+  background-color: rgb(213, 227, 227);
+  padding: 20px;
+  box-shadow: 2px 5px 5px 5px;
+  border-radius: 10px;
+}
+/* Input field and button*/
+input {
+  width: 75%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+.input-field button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  width: 20%;
+  background-color: rgb(43, 39, 165);
+  color: whitesmoke;
+}
+.input-field {
+  text-align: center;
+}
+/* Items list */
+
+.items-lists {
+  margin: 20px 10px;
+}
+.items-lists button {
+  padding: 3px 8px;
+  color: whitesmoke;
+  border: 0;
+  border-radius: 3px;
+}
+
+li {
+  margin: 10px 0;
+  list-style: none;
+  overflow-x: hidden;
+}
+#lidiv {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+#edit {
+  background-color: rgb(94, 94, 168);
+  position: absolute;
+  right: 60px;
+}
+#delete {
+  background-color: rgb(255, 0, 0);
+  right: 0px;
+}
+
+/* Laptop Design */
+
+@media only screen and (min-width:700px) {
+  .box {
+    width: 650px;
+    min-height: 80%;
+  }
+}
