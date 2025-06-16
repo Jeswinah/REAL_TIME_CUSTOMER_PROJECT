@@ -201,7 +201,7 @@ form button {
   .img-box {
     display: none;
   }
-  .services{
+  .services {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,5 +327,8 @@ form button {
     grid-template-columns: repeat(4, auto);
     justify-content: space-evenly;
     margin: 20px 0;
+  }
+  .card {
+    width: 250px;
   }
 }
